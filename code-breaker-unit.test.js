@@ -1,4 +1,4 @@
-const codeBroker = require('./code-breaker');
+const codeBroker = require('./src/helpers/code_breaker');
 
 describe('asserts', () => {
     test('assert all', () => {

@@ -1,7 +1,4 @@
-const secret = '1234';
-
-
-const resolve = (request) => {
+const resolveCodeBreaker = (request, secret) => {
     let correct = '';
     let coincidence = '';
     let newSecret = secret.split("");
@@ -18,6 +15,7 @@ const resolve = (request) => {
 
     return correct + coincidence;
 }
+
 module.exports = {
-    resolve
+    resolveCodeBreaker
 }
