@@ -7,6 +7,7 @@ module.exports = {
     const response = {};
     try {
       const result = await storeItem(req);
+      console.log(result)
       response.status = 201;
       response.body = {
         room: result.room

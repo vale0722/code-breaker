@@ -39,7 +39,7 @@ describe.each([
     }
 ])('code broker', ({request, result}) => {
     test(result, () => {
-        let response = codeBroker.resolve(request)
+        let response = codeBroker.resolveCodeBreaker(request)
         expect(response).toBe(result);
     });
 })
