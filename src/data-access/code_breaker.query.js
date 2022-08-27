@@ -1,4 +1,4 @@
-const { item } = require("src/models/persistence");
+const { item } = require("../models/persistence");
 
 const create = async function (data) {
   try {

@@ -1,6 +1,6 @@
-const { CodeBreakerController } = require("src/controllers");
+const { CodeBreakerController } = require("../../controllers");
 const router = require("express").Router();
-const CodeBreakerRequest = require("src/requests/code_breaker.request");
+const CodeBreakerRequest = require("../../requests/code_breaker.request");
 
 router.post("/", CodeBreakerController.store);
 router.post("/", ...CodeBreakerRequest.resolve, CodeBreakerController.resolve);

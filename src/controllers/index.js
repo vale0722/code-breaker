@@ -1,9 +1,5 @@
-const CategoryController = require("./code_breaker.controller");
-const ProductController = require("./product.controller");
-const ProductViewController = require("./product-view.controller");
+const CodeBreakerController = require("./code_breaker.controller");
 
 module.exports = {
-  CategoryController,
-  ProductController,
-  ProductViewController,
+  CodeBreakerController,
 };
