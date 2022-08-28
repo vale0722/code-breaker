@@ -28,8 +28,8 @@ app.use(function (err, req, res, next) {
 });
 
 if (process.env.NODE_ENV === "development") {
-  app.listen(8000, () => {
-    console.log("Server on port 8000");
+  app.listen(process.env.PORT || 8000, () => {
+    console.log("Server on port");
   });
 }
 
